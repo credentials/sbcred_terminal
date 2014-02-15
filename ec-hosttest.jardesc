@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="ec-hosttest/ec_attr_host.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/ec-hosttest/ec-hosttest.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" mainClassHandleIdentifier="=ec-hosttest/src&lt;terminal{GateClientGUI.java[GateClientGUI" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="false" exportJavaFiles="true" exportOutputFolder="true">
+        <javaElement handleIdentifier="=ec-cardtest/src"/>
+        <file path="/ec-hosttest/README.ectest"/>
+        <file path="/gpj/README.txt"/>
+        <file path="/bouncycastle/README"/>
+        <javaElement handleIdentifier="=ec-hosttest/src"/>
+        <javaElement handleIdentifier="=bouncycastle-ext/src"/>
+        <file path="/ec-hosttest/javacard/applet.cap"/>
+        <file path="/ec-hosttest/gpl.txt"/>
+        <file path="/gpj/lgpl-3.0.txt"/>
+        <javaElement handleIdentifier="=gpj/src"/>
+        <javaElement handleIdentifier="=bouncycastle/src"/>
+        <folder path="/ec-hosttest/data"/>
+    </selectedElements>
+    <fatjar builder="org.eclipse.jdt.ui.plain_jar_builder" launchConfig=""/>
+</jardesc>

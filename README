@@ -1,0 +1,94 @@
+The EC host package demonstrates the use of bilinear pairings in Elliptic Curve for
+privacy friendly attribute proving in public transport. The program is a self contained
+demo to show how this works in practice and estimate the performance.
+
+Disclaimer
+==========
+
+We do not take any responsibility whatsoever for any damage that this program
+may cause, in particular for broken (Java) cards. 
+
+License
+=======
+
+This program is distributed under the GNU Public License, see
+http://www.gnu.org/licenses/. The libraries that this program uses,
+see below, are distributed under their corresponding licenses.
+
+Resources
+=========
+
+The theoretical underpinnings of this work are described in the following papers:
+
+Lejla Batina, Jaap-Henk Hoepman, Bart Jacobs, Wojciech Mostowski, and Pim Vullers.
+Developing efficient blinded attribute certificates on smart cards via pairings.
+In Dieter Gollmann and Jean-Louis Lanet, editors, Smart Card Research and Advanced
+Applications, 9th IFIP WG 8.8/11.2 International Conference, CARDIS 2010,
+Passau, Germany, April 13-16, 2010. Proceedings, volume 6035 of LNCS,
+pages 209-222. Springer-Verlag, April 2010. 
+
+Jaap-Henk Hoepman, Bart Jacobs, and Pim Vullers.
+Privacy and Security Issues in e-Ticketing -- Optimisation of Smart Card-based
+Attribute-proving.
+In Veronique Cortier, Mark Ryan and Vitaly Shmatikov, editors, Workshop on
+Foundations of Security and Privacy, FCS-PrivMod 2010, Edinburgh, UK, July 14-15, 2010.
+Proceedings. July 2010.
+
+The official project web-page is at:
+
+http://www.ovchip.org
+
+Requirements
+============
+
+To run the demo you will need the following:
+
+1. A Java Runtime Environment ver. >= 1.6 with the SmartCardIO library.
+   This library is distributed by default with Sun's JRE for most operating
+   systems (e.g. Linux and Windows).
+
+2. A PC/SC compliant smart card reader and corresponding drivers for your OS.
+
+3. A blank NXP JCOP 31 v2.4.1 Java Card. 
+
+Running
+=======
+
+Just start the application by running the ec_attr_host.jar file with JRE. On windows
+this is usually done by double-clicking the file, on Linux you can try e.g.
+
+java -jar ec_attr_host.jar 
+
+The first thing you have to do is to choose the smart card reader that you want 
+to use. Then a window with three buttons should pop-up, that enable you to:
+
+- upload/reload the ovchip applet to the card (also to delete it)
+- personalise the card with some example attributes
+- check the card's validity with respect to above mentioned attributes 
+
+Libraries
+=========
+
+The program uses a number of Java libraries with their corresponding 
+licenses, as follows:
+
+- Bouncy Castle security provider for Java: http://www.bouncycastle.org
+
+- Bouncy Castle is extended with our modification to support ECC bilinear pairings
+
+- Global Platform Java implementation, http://gpj.sourceforge.net 
+
+Sources
+=======
+
+Sources for all the code are included in the distributed jar file.
+
+People
+======
+
+People involved in the development of this demo program are:
+
+Daniel Boonstra, TNO ICT
+Pim Vullers, Radboud University Nijmegen, pim@cs.ru.nl
+Wojciech Mostowski, Radboud University Nijmegen, woj@cs.ru.nl
+  
